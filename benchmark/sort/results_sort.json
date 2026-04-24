@@ -1,0 +1,9 @@
+{
+    "latency": 166289,
+    "utilization": {
+        "util_bram": 0.0,
+        "util_dsp": 0.0,
+        "util_ff": 0.005687934027777778,
+        "util_lut": 0.019926215277777777
+    }
+}

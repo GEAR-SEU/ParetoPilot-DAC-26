@@ -1,0 +1,63 @@
+{
+    "arrays": {
+        "sbox": {
+            "type": [0, 1, 2],
+            "dim": [1],
+            "factor_n": {
+                "1": [0, 2, 4, 8, 16, 32, 64, 128, 256]
+            }
+        },
+        "k": {
+            "type": [0, 1, 2],
+            "dim": [1],
+            "factor_n": {
+                "1": [0, 2, 4, 8, 16, 32]
+            }
+        },
+        "buf": {
+            "type": [0, 1, 2],
+            "dim": [1],
+            "factor_n": {
+                "1": [0, 2, 4, 8, 16]
+            }
+        }
+    },
+    "loops": {
+        "sub": {
+            "pipeline": [0, 1],
+            "unroll": [0, 2, 4, 8, 16]
+        },
+        "addkey": {
+            "pipeline": [0, 1],
+            "unroll": [0, 2, 4, 8, 16]
+        },
+        "cpkey": {
+            "pipeline": [0, 1],
+            "unroll": [0, 2, 4, 8, 16]
+        },
+        "mix": {
+            "pipeline": [0, 1],
+            "unroll": [0, 2, 4]
+        },
+        "exp1": {
+            "pipeline": [0, 1],
+            "unroll": [0, 3]
+        },
+        "exp2": {
+            "pipeline": [0, 1],
+            "unroll": [0, 3]
+        },
+        "ecb1": {
+            "pipeline": [0, 1],
+            "unroll": [0, 2, 4, 8, 16, 32]
+        },
+        "ecb2": {
+            "pipeline": [0, 1],
+            "unroll": [0, 7]
+        },
+        "ecb3": {
+            "pipeline": [0, 1],
+            "unroll": [0, 13]
+        }
+    }
+}

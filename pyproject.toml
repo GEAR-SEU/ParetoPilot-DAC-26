@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paretopilot"
+version = "0.1.0"
+description = "LLM-guided high-level synthesis design space exploration workflow."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "huggingface-hub>=0.30",
+  "langchain>=0.3",
+  "langchain-openai>=0.2",
+  "matplotlib>=3.8",
+  "numpy>=1.26",
+  "psutil>=5.9",
+  "PyYAML>=6.0",
+  "scipy>=1.13",
+  "torch>=2.2",
+  "tqdm>=4.66",
+  "transformers>=4.51",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["config_loader", "DSE_LLM"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
