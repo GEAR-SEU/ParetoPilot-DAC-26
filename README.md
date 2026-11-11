@@ -1,6 +1,7 @@
 # ParetoPilot: Global Optimization Reasoning on HLS Design Space Exploration with LLMs
 > 🌟 **Accepted by DAC 2026**
 
+[![Paper](https://img.shields.io/badge/Paper-DAC%202026-blue.svg)](https://dl.acm.org/doi/abs/10.1145/3770743.3804051)
 [![Model](https://img.shields.io/badge/🤗_Hugging_Face-ParetoPilot-ffc107.svg)](https://huggingface.co/XXXiong/ParetoPilot)
 
 ParetoPilot is a lightweight, automated workflow for LLM-guided high-level synthesis (HLS) design space exploration (DSE). By instilling LLMs with expert-like global optimization reasoning, ParetoPilot efficiently navigates the massive combinatorial space of HLS directives to rapidly shape broad and concave Pareto fronts.
